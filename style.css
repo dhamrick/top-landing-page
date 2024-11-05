@@ -1,0 +1,85 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+div {
+    border: black solid; /*just for positioning during build*/
+} 
+
+body {
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+}
+
+.header,
+.footer {
+    display: flex;
+    align-items: center;
+   align-self: stretch;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.footer {
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.intro-section,
+.card-table,
+.quote,
+.call-to-action {
+    display: flex;
+    flex: 1;
+}
+
+.intro-right {
+    flex: 0 0 50%;
+}
+
+.card-table-header {
+    text-align: center;
+    height: 50px;
+}
+
+.card-table {
+    align-self: stretch;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
