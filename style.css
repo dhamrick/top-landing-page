@@ -17,8 +17,13 @@ body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.section {
+    padding: 0px 90px;
+    align-self: stretch;
 }
 
 .header,
@@ -42,10 +47,10 @@ ul {
     list-style-type: none;
 }
 
-.intro-section,
-.card-table,
-.quote,
-.call-to-action {
+.section.intro,
+.section.card-table,
+.section.quote,
+.section.call-to-action {
     display: flex;
     flex: 1;
 }
@@ -68,13 +73,40 @@ ul {
 }
 
 .card-top {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 
+.card-bottom {
+    text-wrap: wrap;
+    width: 150px;
+    font-size: 18px;
+}
+.section.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.quote .text{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
 
+.call-to-action {
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+}
 
+.cta-content {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
 
 
 
