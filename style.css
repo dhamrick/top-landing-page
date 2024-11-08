@@ -6,8 +6,6 @@
     box-sizing: border-box;
 }
 
-
-
 div {
     border: black solid; /*just for positioning during build*/
 } 
@@ -17,103 +15,109 @@ body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-width: 1000px;
 }
 
 .section {
-    padding: 0px 90px;
+    padding: 40px 100px;
     align-self: stretch;
     display: flex;
     justify-content: center;
     flex: 1;
 }
 
-.header,
-.intro,
-.footer {
+/* Intro and header styling */
+.intro {
     background-color: #1F2937;
     color: #F9FAF8;
-}
-
-.section.intro {
-    padding-top: 40px;
-    padding-bottom:40px;
-}
-
-.intro-left {
-    display: flex;
+    padding-top: 5px;
+    padding-bottom:60px;
     flex-wrap: wrap;
-}
-
-.header-links,
-.intro-text {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-.header,
-.footer {
-    align-items: center;
-    height: 40px;
-    flex: none;
+    gap: 20px;
 }
 
 .header {
     justify-content: space-between;
+    flex: 1 0 100%;
+    display: flex;
+    margin-bottom: 40px;
 }
 
-.intro-header {
-    font-size: 48px;
-    font-weight: 900;
+.header-links {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header-links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #E5E7EB;
 }
 
 .header-logo {
     font-size: 24px;
 }
 
-.footer {
-    justify-content: center;
+.intro {
+    background-color: #1F2937;
+    color: #F9FAF8;
 }
 
-ul {
+.intro-title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.intro-left {
     display: flex;
-    list-style-type: none;
-    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
-a {
-    text-decoration: none;
+.intro-text {
+    font-size: 18px;
     color: #E5E7EB;
+}
+
+.intro-right {
+    flex: 0 0 50%;
+    background-color: #636262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
 }
 
 .intro button {
     background-color: #3882F6;
     color: white;
-    padding: 0px 40px;
+    padding: 5px 25px;
     border-radius: 10px;
     font-size: 12px;
-    flex: none;
+    flex-shrink: 0;
+    margin-top: 10px;
+
 }
 
-.intro-right {
-    flex: 0 0 50%;
-    background-color: #E5E7EB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
-
+/* Card Table styling sectoin */
 .card-table {
-    padding: 20px;
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 
 .card-table-header {
-    flex: none;
+    text-align: center;
+    flex: 1 0 100%;
+    font-size: 36px;
+    font-weight: 900;
 }
 
 .card {
@@ -122,8 +126,8 @@ a {
 }
 
 .card-image {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,19 +137,32 @@ a {
 
 .card-text {
     text-wrap: wrap;
-    width: 100px;
+    width: 125px;
     font-size: 12px;
-}
-.section.quote{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-.quote .text{
+/*quote styling */
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.quote-text{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: lighter;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-weight: 600;
 }
 
 .call-to-action {
@@ -154,19 +171,45 @@ a {
     align-items: center;
 }
 
-.cta-content {
+.cta {
+    background-color: #3882F6;
+    color: #F9FAF8;
+
+}
+
+.cta.content {
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 30px 90px;
+    border-radius: 10px;
 }
 
+.cta.right{
+    display: flex;
+    align-items: center;
+}
 
+.cta button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 5px 25px;
+    border-radius: 10px;
+    font-size: 12px;
+    flex-shrink: 0;
+    border-color: white;
+    font-family: inherit;
+    border: 2px solid;
 
+}
 
-
-
-
+.section.footer {
+    align-items: center;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 10px;
+    font-size: 12px;
+}
 
 
