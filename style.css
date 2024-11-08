@@ -6,9 +6,9 @@
     box-sizing: border-box;
 }
 
-div {
-    border: black solid; /*just for positioning during build*/
-} 
+/* div {
+    border: black solid;
+}  */
 
 body {
     height: 100vh;
@@ -16,10 +16,11 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 1000px;
+    justify-content: center;
 }
 
 .section {
-    padding: 40px 100px;
+    padding: 40px 120px;
     align-self: stretch;
     display: flex;
     justify-content: center;
@@ -126,18 +127,18 @@ body {
 }
 
 .card-image {
-    height: 125px;
-    width: 125px;
+    height: 110px;
+    width: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border-color: #3882F6;
+    border: 3px solid #3882F6;
 }
 
 .card-text {
     text-wrap: wrap;
-    width: 125px;
+    width: 110px;
     font-size: 12px;
     text-align: center;
 }
@@ -210,6 +211,8 @@ body {
     color: #F9FAF8;
     padding: 10px;
     font-size: 12px;
+    height: 60px;
+    flex: none;
 }
 
 
